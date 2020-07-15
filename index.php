@@ -11,7 +11,7 @@ if ($_SERVER['SERVER_NAME'] == 'mailtrap') {
         ->setUsername('772fbdfbf02416')
         ->setPassword('a22403c46020d8');
 } else {
-    // Production SMTP client
+    // Production SMTP client - Unix/Linux servers only
     $transport = new Swift_SendmailTransport();
 }
 
