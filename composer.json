@@ -1,0 +1,13 @@
+{
+    "name": "bcheronn/mailtrap",
+    "description": "Use Mailtrap and Swift Mailer",
+    "authors": [
+        {
+            "name": "Bertrand C",
+            "email": "66913901+bcheronn@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}
