@@ -1,5 +1,6 @@
 <?php
-/* Using Swift Mailer
+
+// Using Swift Mailer
 // Load the required vendor libraries
 require_once 'vendor/autoload.php';
 
@@ -27,8 +28,8 @@ $message = (new Swift_Message('Mailtrap test'))
 $result = $mailer->send($message);
 
 var_dump($result);
-*/
 
+/*
 // Wamp version
 $mail = mail('bertrand@cheronnet.com', 'Salut', 'Salut les gens !', 'From: webmaster@cheronnet.com');
 
@@ -37,3 +38,4 @@ if ($mail) {
 } else {
     echo 'Erreur :(';
 }
+*/
