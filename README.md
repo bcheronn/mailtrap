@@ -1,0 +1,2 @@
+# mailtrap
+Mailtrap test config
