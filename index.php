@@ -1,9 +1,10 @@
 <?php
+/* Using Swift Mailer
 // Load the required vendor libraries
 require_once 'vendor/autoload.php';
 
 // Create the Transport
-if ($_SERVER['SERVER_NAME'] == 'mailtrap.local') {
+if ($_SERVER['SERVER_NAME'] == 'mailtrap') {
     // Local SMTP mailtrap
     $transport = (new Swift_SmtpTransport('smtp.mailtrap.io', 465))
         ->setUsername('772fbdfbf02416')
@@ -26,3 +27,13 @@ $message = (new Swift_Message('Mailtrap test'))
 $result = $mailer->send($message);
 
 var_dump($result);
+*/
+
+// Wamp version
+$mail = mail('bertrand@cheronnet.com', 'Salut', 'Salut les gens !', 'From: webmaster@cheronnet.com');
+
+if ($mail) {
+    echo 'Merci :D';
+} else {
+    echo 'Erreur :(';
+}
